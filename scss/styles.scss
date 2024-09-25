@@ -1,0 +1,54 @@
+// Variables
+$primary-color: #f8f9fa; // Background color for navbar
+$text-color: white; // Text color
+
+// Estilos generales
+body {
+    background-image: url('../img/restaurante-chalue.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+// Estilo del navbar
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-link {
+    color: #333;
+}
+
+// Estilos para el título y texto
+h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+// Estilo de la imagen del jefe
+.img-jefe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+// Estilo del footer
+footer {
+    text-align: center;
+    color: $text-color;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
