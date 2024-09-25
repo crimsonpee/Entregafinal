@@ -1,8 +1,14 @@
 // Variables
-$primary-color: #f8f9fa; // Background color for navbar
-$text-color: white; // Text color
+$primary-color: #d35400;
+$secondary-color: #f39c12;
+$text-color: white;
 
-// Estilos generales
+// Mixin for transitions
+@mixin transition($property, $duration) {
+  transition: $property $duration ease-in-out;
+}
+
+// Global styles
 body {
     background-image: url('../img/restaurante-chalue.jpg');
     background-size: cover;
@@ -13,20 +19,26 @@ body {
     margin: 0;
 }
 
-// Estilo del navbar
+// Navbar styles
 .navbar {
     background-color: rgba(255, 255, 255, 0.8);
+    
+    .nav-link {
+        color: #333;
+        @include transition(color, 0.3s);
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
 }
 
-.nav-link {
-    color: #333;
-}
-
-// Estilos para el título y texto
+// Content styles
 h1 {
     margin-top: 50px;
     font-size: 2.5rem;
     text-align: center;
+    animation: fadeIn 1s ease-in;
 }
 
 .content {
@@ -35,20 +47,290 @@ h1 {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
+    animation: slideIn 1s ease-in-out;
 }
 
-// Estilo de la imagen del jefe
+// Image styles
 .img-jefe {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    @include transition(transform, 0.3s);
+    
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
-// Estilo del footer
+// Footer styles
 footer {
     text-align: center;
     color: $text-color;
     margin-top: 30px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+// Keyframes para animaciones
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+// Variables
+$primary-color: #d35400;
+$text-color: white;
+
+// mixin para transiciones, esto no me acuerdo si lo vimos pero eh visto videos y quise agregarlo
+@mixin transition($property, $duration) {
+    transition: $property $duration ease-in-out;
+}
+
+// Global styles
+body {
+    background-image: url('../img/restaurante-chalue.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+// Navbar styles
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+
+    .nav-link {
+        color: #333;
+        @include transition(color, 0.3s);
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+// stylos de content
+h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    @include transition(transform, 0.3s);
+
+    &:hover {
+        transform: scale(1.05); // Image zoom on hover
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); // Box shadow effect
+    }
+}
+
+// imagen con efecto
+.card-img-top {
+    @include transition(transform, 0.3s);
+
+    &:hover {
+        transform: scale(1.1); // Slight zoom on image hover
+    }
+}
+
+// Card para titulo animado
+.card-title {
+    font-size: 1.5rem;
+    color: $primary-color;
+    animation: fadeIn 0.5s ease-in;
+}
+
+// Card text
+.card-text {
+    color: $text-color;
+    font-size: 1rem;
+    @include transition(color, 0.3s);
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+// Keyframes para animaciones
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+// Variables
+$primary-color: #d35400; // Primary color for accents
+$text-color: white; // Text color
+$transition-duration: 0.3s; // Duration for transitions
+
+// Mixin for transitions
+@mixin transition($property, $duration) {
+  transition: $property $duration ease-in-out;
+}
+
+// Global styles
+body {
+    background-image: url('../img/restaurante-chalue.jpg'); // Background image
+    background-size: cover; // Cover background
+    background-position: center; // Center the image
+    background-repeat: no-repeat; // No repeat
+    color: $text-color; // Text color
+    font-family: Arial, sans-serif; // Font family
+    margin: 0; // Remove default margin
+}
+
+// Navbar styles
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); // Semi-transparent background
+
+    .nav-link {
+        color: #333; // Link color
+        @include transition(color, $transition-duration); // Transition for color change
+
+        &:hover {
+            color: $primary-color; // Change color on hover
+        }
+    }
+}
+
+// Container styles
+.container {
+    margin-top: 5rem; // Top margin for container
+
+    h1 {
+        text-align: center; // Center align title
+        margin-bottom: 2rem; // Bottom margin
+        animation: fadeIn 1s; // Fade-in animation
+    }
+}
+
+// Card styles for locales
+.card {
+    @include transition(transform, $transition-duration); // Transition for transform
+    overflow: hidden; // Hide overflow
+
+    &:hover {
+        transform: scale(1.05); // Scale up on hover
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); // Add shadow on hover
+    }
+
+    .card-body {
+        background-color: rgba(255, 255, 255, 0.9); // Card body background
+        border-radius: 8px; // Rounded corners
+    }
+}
+
+// Fade-in animation
+@keyframes fadeIn {
+    from {
+        opacity: 0; // Start invisible
+    }
+    to {
+        opacity: 1; // End fully visible
+    }
+}
+
+// Footer styles
+footer {
+    background-color: rgba(0, 0, 0, 0.8); // Dark background
+    color: white; // Text color
+    text-align: center; // Center text
+    padding: 1rem; // Padding
+    margin-top: 3rem; // Top margin
+}
+// Variables
+$primary-color: #f8f9fa; // Light background color
+$secondary-color: rgba(255, 255, 255, 0.9); // Semi-transparent white
+$text-color: #333; // Dark text color
+$border-radius: 8px; // Border radius for cards
+
+// Estilos generales
+body {
+    background-image: url('../img/restaurante-chalue.jpg'); // Ruta de la imagen de fondo
+    background-size: cover; // Cubre toda el área
+    background-position: center; // Centra la imagen
+    background-repeat: no-repeat; // No repite la imagen
+    color: $text-color; // Color del texto
+    font-family: Arial, sans-serif; // Fuente del texto
+    margin: 0; // Elimina el margen por defecto del body
+}
+
+// Estilo del navbar
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); // Fondo semitransparente para el navbar
+}
+
+.nav-link {
+    color: $text-color; // Color de los enlaces del navbar
+    transition: color 0.3s; // Transición suave al cambiar de color
+    &:hover {
+        color: darken($text-color, 10%); // Cambia el color al pasar el mouse
+    }
+}
+
+// Estilo del título
+h1 {
+    margin-top: 50px; // Espacio superior para el título
+    font-size: 2.5rem; // Tamaño del texto del título
+    text-align: center; // Centra el título
+}
+
+// Estilo de la lista de postres
+ul {
+    padding: 0; 
+    list-style: none; 
+}
+
+li {
+    background-color: $secondary-color; // Fondo de los postres
+    border: 1px solid #ddd; // Borde claro
+    border-radius: $border-radius; // Esquinas redondeadas
+    transition: transform 0.3s, box-shadow 0.3s; // Transiciones para efectos
+    padding: 15px; // Espaciado interno
+    margin-bottom: 15px; // Espaciado entre postres
+
+    &:hover {
+        transform: translateY(-5px); // Sube el postre al pasar el mouse
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra al pasar el mouse
+    }
+
+    h5 {
+        margin: 0; // Sin margen en el título
+        color: $text-color; // Color del texto del título
+    }
+
+    p {
+        color: darken($text-color, 10%); // Color del texto de la descripción
+    }
+}
+
+// Estilo del footer
+footer {
+    text-align: center; // Centra el texto del footer
+    color: $text-color; // Color del texto del footer
+    margin-top: 30px; // Espacio en la parte superior del footer
+    padding: 10px; // Espaciado interno
+    background-color: rgba(0, 0, 0, 0.8); // Fondo oscuro y semitransparente para el footer
 }
