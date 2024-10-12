@@ -3,151 +3,143 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
+  color: white; /* Color de texto blanco */
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8);
+background-color: rgba(255, 255, 255, 0.8);
 }
 .navbar .nav-link {
-  color: #333;
-  transition: color 0.3s ease-in-out;
+color: #333;
+transition: color 0.3s ease-in-out;
 }
 .navbar .nav-link:hover {
-  color: #d35400;
+color: #d35400;
 }
 
 h1 {
-  margin-top: 50px;
-  font-size: 2.5rem;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
+margin-top: 50px;
+font-size: 2.5rem;
+text-align: center;
+animation: fadeIn 1s ease-in;
 }
 
 .content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  animation: slideIn 1s ease-in-out;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.6);
+border-radius: 8px;
+animation: slideIn 1s ease-in-out;
 }
 
 .img-jefe {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+width: 100%;
+height: auto;
+border-radius: 8px;
+transition: transform 0.3s ease-in-out;
 }
 .img-jefe:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 footer {
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+text-align: center;
+color: white;
+margin-top: 30px;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.8);
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
 }
 @keyframes slideIn {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+from {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+to {
+  transform: translateY(0);
+  opacity: 1;
+}
 }
 body {
-  background-image: url("../img/restaurante-chalue.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
+background-image: url("../img/restaurante-chalue.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8);
+background-color: rgba(255, 255, 255, 0.8);
 }
 .navbar .nav-link {
-  color: #333;
-  transition: color 0.3s ease-in-out;
+color: #333;
+transition: color 0.3s ease-in-out;
 }
 .navbar .nav-link:hover {
-  color: #d35400;
+color: #d35400;
 }
 
 h1 {
-  margin-top: 50px;
-  font-size: 2.5rem;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
+margin-top: 50px;
+font-size: 2.5rem;
+text-align: center;
+animation: fadeIn 1s ease-in;
 }
 
 .card {
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.3s ease-in-out;
 }
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-  transition: transform 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out;
 }
 .card-img-top:hover {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 
 .card-title {
-  font-size: 1.5rem;
-  color: #d35400;
-  animation: fadeIn 0.5s ease-in;
+font-size: 1.5rem;
+color: #d35400;
+animation: fadeIn 0.5s ease-in;
 }
 
 .card-text {
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s ease-in-out;
+color: white;
+font-size: 1rem;
+transition: color 0.3s ease-in-out;
 }
 .card-text:hover {
-  color: #d35400;
+color: #d35400;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
 }
 body {
-  background-image: url("../img/restaurante-chalue.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
+background-image: url("../img/restaurante-chalue.jpg");
+
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.8);
@@ -160,9 +152,6 @@ body {
   color: #d35400;
 }
 
-.container {
-  margin-top: 5rem;
-}
 .container h1 {
   text-align: center;
   margin-bottom: 2rem;
@@ -171,15 +160,10 @@ body {
 
 .card {
   transition: transform 0.3s ease-in-out;
-  overflow: hidden;
 }
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-.card .card-body {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
 }
 
 @keyframes fadeIn {
@@ -190,73 +174,78 @@ body {
     opacity: 1;
   }
 }
+
 footer {
   background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  color: black;
   text-align: center;
   padding: 1rem;
+  
   margin-top: 3rem;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  background-image: url("../img/restaurante-chalue.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #333;
-  font-family: Arial, sans-serif;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.nav-link {
-  color: #333;
-  transition: color 0.3s;
-}
-.nav-link:hover {
-  color: rgb(25.5, 25.5, 25.5);
-}
-
-h1 {
-  margin-top: 50px;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-li h5 {
-  margin: 0;
-  color: #333;
-}
-li p {
-  color: rgb(25.5, 25.5, 25.5);
+main {
+  flex: 1; /* Ocupa el espacio restante */
+  padding-bottom: 0; /* Eliminar padding en la parte inferior */
 }
 
 footer {
+  background-color: #f8f9fa;
   text-align: center;
-  color: #333;
-  margin-top: 30px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  margin-top: auto; /* Asegura que el footer esté al final */
 }
+
+/* Estilos personalizados para la lista de postres */
+ul.list-group {
+  max-width: 600px;
+  margin: 0 auto; /* Centrar la lista */
+  padding: 0;
+}
+
+ul.list-group-item {
+  background-color: #e9ecef; /* Fondo gris claro */
+  border: none; /* Quitar borde predeterminado */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Efecto al pasar el ratón */
+}
+
+ul.list-group-item:hover {
+  transform: translateY(-5px); /* Efecto de flotación */
+  background-color: #d3d3d3; /* Cambio de color al pasar el ratón */
+}
+
+ul.list-group-item strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  color: white; /* Color blanco para el título */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  padding: 15px; /* Padding alrededor del texto */
+  border-radius: 12px; /* Bordes redondeados */
+}
+
+.container {
+  text-align: center;
+}
+
 
 

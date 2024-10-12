@@ -1,0 +1,14 @@
+.navbar {
+    background-color: $navbar-background;
+    
+    .navbar-brand,
+    .nav-link {
+      color: $white-color;
+      @include smooth-transition(color);
+  
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  
